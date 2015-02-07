@@ -1,0 +1,5 @@
+---
+# handlers file for ansible-mongodb
+- name: Restart mongodb
+  sudo: true
+  service: name=mongodb state=restarted

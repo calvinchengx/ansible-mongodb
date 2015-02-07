@@ -1,0 +1,8 @@
+---
+- name: Install mongodb
+  sudo: true
+  pacman: name=mongodb state=present
+
+- name: Ensure that mongodb is running
+  sudo: true
+  service: name=mongodb state=started enabled=yes
